@@ -4,9 +4,7 @@ A responsive and interactive frontend for a food delivery application built usin
 
 ## 📸 Screenshot
 
-![App Screenshot](img1.png)
-
-> Make sure the screenshot image file (`img1.png`) is in the root or update the path accordingly.
+![App Screenshot](images/img1.png)
 
 ## 🛠️ Features
 
