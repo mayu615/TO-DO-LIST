@@ -1,0 +1,139 @@
+/* Remove margin and padding from the page */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*  */
+body{
+    /* text-align: center; */
+    background-color: #B284BE;
+    background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);  
+}
+
+/* style the head part */
+.header{
+    /* margin: rem; */
+    padding: 1rem;
+    text-align: center;
+    
+    
+}
+
+.container {
+    height: auto;
+    width: 70vw;
+    margin: 5rem;
+    padding: 2rem;
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    /* -webkit-backdrop-filter: blur(5px); */
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.main {
+    text-align: center;
+    width: 70%;
+    height: auto;
+    margin-left: 4rem;
+    
+}
+
+
+
+/* style the heading */
+h1{
+    background: -webkit-linear-gradient(0.25turn, #d761c1, #45123b);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* margin: 2rem; */
+    font-size: 2.5rem;
+}
+
+/* style input box */
+input{
+    padding: 1.4vmin;
+    border-radius: 0.3rem;
+    background-color: #fff;
+    border: none;
+}
+
+/* style add button */
+.add {
+    padding: 1.2vmin;
+    background: #e9c4e2;
+    color: #45123b;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0.3rem;
+}
+
+.add:hover {
+    background-color: #c067ae;
+}
+
+
+/* style the list item */
+ul li {
+    font-size: 1.2rem;
+    /* text-align: start; */
+    color: #45123b;
+    background-color: #e9c4e2;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+    padding: 1vmin;
+
+    /* non selectable list */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+/* (zebra-stripes) for list items */
+ul li:nth-child(odd) {
+    background-color: #e7a1d9;
+}
+
+/* add a darker bgcolor on hover */
+ul li:hover {
+    background:#c067ae;
+}
+
+/* for checked items  */
+ul li.checked {
+    background: #7b306e;
+    color: #e9c4e2;
+    text-decoration: line-through;
+}
+
+/* add check mark after click */
+ul li.checked::before {
+    content: '';
+  position: absolute;
+  border: 3px solid #ebf8e1;
+  border-width: 0 0.8vmin 0.8vmin 0;
+  top: 0.4rem;
+  left: 1rem;
+  transform: rotate(45deg);
+  height: 2.5vmin;
+  width: 1vmin;
+}
+
+/* style delete button */
+.remove {
+    position: absolute;
+    padding: 1vmin;
+    top: 0;
+    right: 0;
+}
+
+.remove:hover {
+    background-color: #45123b;
+    color: #e9c4e2;
+}
